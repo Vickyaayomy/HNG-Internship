@@ -1,23 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import profilepic from "./components/profilepic.jpg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <header>
+          <img id="profile_img" alt="profile-pics" src={profilepic} />
+          <h5>Opeyemi Ogunfeyitimi</h5>
+        </header>
+
+        <main>
+          {/* <h3 id='slack'>Opeyemi Ogunfeyitimi</h3>  */}
+          <button>
+            <a href="https://twitter.com/OgunfeyitimiOp1" id="twitter">
+              OgunfeyitimiOp1
+            </a>
+          </button>
+          <button>
+            <a href="https://training.zuri.team/" id="btn__zuri">
+              Zuri Team
+            </a>
+          </button>
+          <button>
+            <a href="http://books.zuri.team" id="books">
+              Zuri books
+            </a>
+          </button>
+          <button>
+            <a href="https://books.zuri.team" id="book__python">
+              Python books
+            </a>
+          </button>
+          <button>
+            <a href="https://background.zuri.team" id="pitch">
+              Background checks for coders
+            </a>
+          </button>
+          <button>
+            <a href="https://books.zuri.team/design-rules " id="book__design">
+              Design books
+            </a>
+          </button>
+          <div className="icons">
+            <a href="https://app.slack.com/client/T042F7V19Q8/C041JU70S5U">
+              <i class="fa-brands fa-slack"></i>
+            </a>
+            <a href="https://github.com/Vickyaayomy/">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </main>
+
+        <footer>
+          <div className="bottom">
+            <p className="zuri-intern">
+              <span className="dot">Zuri</span>Internship
+            </p>
+            <p className="hng-intern">HNG Internship 9 Frontend Task</p>
+            <p className="ingressive">
+              INGRESSIVE<span className="for-good">FOR GOOD</span>
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
