@@ -1,9 +1,23 @@
 import profilepic from "./components/profilepic.jpg";
+import I4G from "./components/I4G.png";
 import "./App.css";
+import Contact from "./components/Contact";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  
+} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+        <div className="App">
+    
+    <Routes>
+    <Route path="/contact" element={<Contact />} />
+    </Routes> 
+
       <div className="container">
         <header>
           <img id="profile_img" alt="profile-pics" src={profilepic} />
@@ -38,8 +52,13 @@ function App() {
             </a>
           </button>
           <button>
-            <a href="https://books.zuri.team/design-rules " id="book__design">
+            <a href="https://books.zuri.team/design-rules" id="book__design">
               Design books
+            </a>
+          </button>
+          <button>
+            <a href="/contact" id="contact">
+              Contact me
             </a>
           </button>
           <div className="icons">
@@ -59,12 +78,13 @@ function App() {
             </p>
             <p className="hng-intern">HNG Internship 9 Frontend Task</p>
             <p className="ingressive">
-              INGRESSIVE<span className="for-good">FOR GOOD</span>
+              <img alt="I4G" width={80} src={I4G} />
             </p>
           </div>
         </footer>
       </div>
     </div>
+    </Router>
   );
 }
 
