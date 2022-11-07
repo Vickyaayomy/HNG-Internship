@@ -1,5 +1,5 @@
 import React from "react";
-// import I4G from "./components/I4G.png";
+import I4G from "./components/I4G.png";
 import "./contact.css";
 
 const contact = () => {
@@ -61,11 +61,12 @@ const contact = () => {
                 placeholder="Send me a message and I'll reply you as soon as possible.."
               ></textarea>
 
-            <div className="check-info">
-              <input type="checkbox" />
-              <label>
-                You agree to providing your data to Opeyemi who may contact you.
-              </label>
+              <div className="check-info">
+                <input type="checkbox" />
+                <label>
+                  You agree to providing your data to Opeyemi who may contact
+                  you.
+                </label>
               </div>
             </section>
             <section>
@@ -83,7 +84,7 @@ const contact = () => {
             </p>
             <p className="hng-intern">HNG Internship 9 Frontend Task</p>
             <p className="ingressive">
-              {/* <img alt="I4G-image" width={80} src={I4G} /> */}
+              <img alt="I4G-image" width={80} src={I4G} />
             </p>
           </div>
         </footer>

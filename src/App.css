@@ -16,10 +16,7 @@
 }
 
 .container {
-  width: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 800px;
 }
 
 #profile_img {
@@ -74,6 +71,7 @@ button:hover {
 footer {
   margin-top: 25px;
   border-top: 1px solid rgb(231, 223, 223);
+  width: 100%;
 }
 
 .zuri-intern {
@@ -91,16 +89,20 @@ footer {
 .hng-intern {
   font-size: 12px;
   color: rgb(129, 123, 123);
+  margin-bottom: 10px;
 }
 
 .bottom {
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 @media only screen and (max-width: 475px) {
+  .container {
+    width: 300px;
+  }
+  
   .App {
     padding: 20px;
   }
