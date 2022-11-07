@@ -65,7 +65,7 @@ function Home() {
             </p>
             <p className="hng-intern">HNG Internship 9 Frontend Task</p>
             <p>
-              <img alt="I4G-image" width={80} src={I4G} />
+              <img alt="pics" width={80} src={I4G} />
             </p>
           </div>
         </footer>
