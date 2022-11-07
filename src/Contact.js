@@ -83,8 +83,8 @@ const contact = () => {
               <span className="dot">Zuri</span>Internship
             </p>
             <p className="hng-intern">HNG Internship 9 Frontend Task</p>
-            <p className="ingressive">
-              <img alt="I4G-image" width={80} src={I4G} />
+            <p>
+              <img alt="Ingressive" width={80} src={I4G} />
             </p>
           </div>
         </footer>
